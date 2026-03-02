@@ -30,7 +30,7 @@ app.get("/version", (_req, res) => {
 
 app.use((err, _req, res, _next) => {
   log(`Unhandled error: ${err.message}`);
-  res.status(500).json({ error: "Internal server error" });
+  res.status(500).json({ error: "Internal server error " });
 });
 
 app.listen(PORT, () => {
